@@ -2,7 +2,7 @@
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# To-do-list-App
+# leader-board
 
 > This is my personnal App demo, feel free to check it out.
 
@@ -11,6 +11,7 @@
 
 - Html
 - Js
+- webpack
 
 
 
@@ -18,16 +19,13 @@
 
 To get a local copy up and running follow these simple example steps.
 
-- copy this link `https://github.com/camilevahviraki/To-do-list-app.git`.
+- copy this link `https://github.com/camilevahviraki/leader-board.git`.
 - get the directory that you want to clone the repository.
 - open the command prompt in this directory.
-- write `https://github.com/camilevahviraki/To-do-list-app.git`.
-- go to the repository folder in your command prompt `To-do-list-app`.
+- write `https://github.com/camilevahviraki/leader-board.git`.
+- go to the repository folder in your command prompt `leader-board`.
 - Open terminal in that folder and run `npm run start`.
 
-## See live demo
-
-- Type [this link](https://camilevahviraki.github.io/To-do-list-App-R/) to see the live demo off the app
 
 
 ## Authors
