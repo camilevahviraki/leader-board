@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;900&display=swap');
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 96vh;
+    border: 1px solid black;
+    align-items: center;
+}
+
+.wrapscores {
+    display: flex;
+    width: 85%;
+}
+
+.scores {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#refresh {
+    height: 40px;
+    width: 70px;
+    border-radius: 0;
+    margin-left: 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: transparent;
+}
+
+.form {
+    width: 45%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-bottom: 40px;
+}
+
+input {
+    width: 96%;
+    margin-bottom: 40px;
+    height: 50px;
+    font-family: 'Lato', sans-serif;
+    border-top: 1px;
+    padding: 0 5px;
+}
+
+#Submit {
+    height: 40px;
+    width: 70px;
+    border-radius: 0;
+    background-color: transparent;
+    position: absolute;
+    right: 1%;
+    top: 260px;
+    font-family: 'Lato', sans-serif;
+}
+
+.mainTitle {
+    width: 80%;
+    font-size: 40px;
+    font-family: 'Lato', sans-serif;
+}
+
+.refreshB {
+    display: flex;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+
+#scoresAndName {
+    width: 100%;
+    border: 2px solid black;
+    font-family: 'Lato', sans-serif;
+}
+
+#greyP {
+    background-color: rgba(80, 79, 79, 0.596);
+}
+
+p {
+    margin: 0;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    padding-left: 10px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+}
