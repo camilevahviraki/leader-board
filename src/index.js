@@ -1,11 +1,9 @@
 import './styles/style.css';
-import $ from 'jquery';
+import { result } from 'lodash';
 import wrapContainer from './modules/WrapContainer.js';
 import wrapscores from './modules/wrapScores.js';
 
 wrapContainer();
-
-// ZEIiDb0Iy2wNzVD068jm
 
 const inputName = document.getElementById('name');
 const inputScore = document.getElementById('scoreIn');
@@ -17,29 +15,30 @@ submitBtn.addEventListener('click', () => {
     user: inputName.value,
     score: inputScore.value,
   };
-  $.post('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/ZEIiDb0Iy2wNzVD068jm/scores/', score, (data, status) => {
-    console.log(data);
-  }).catch((error) => {
-    console.log(error);
+
+  fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/xPaIrcfY1XTX3ESgEwUR/scores/', {
+    method: 'POST',
+    headers: { 'content-type': 'application/json' },
+    body: JSON.stringify({ user: inputName.value, score: inputScore.value }),
+  }).then((response) => {
+    console.log(response);
+    if (response.ok) {
+      return response.json();
+    }
+    throw new Error('Request failed!');
   });
 });
+
+async function fetchScore() {
+  const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/xPaIrcfY1XTX3ESgEwUR/scores/');
+  response.json().then((result) => {
+    const arr = result.result;
+    wrapscores(arr);
+  });
+}
+
+fetchScore();
 
 refreshBtn.addEventListener('click', () => {
-  $.get('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/ZEIiDb0Iy2wNzVD068jm/scores/', (response) => {
-    console.log(response.result);
-    const arr = response.result;
-
-    wrapscores(arr);
-  }).catch((error) => {
-    console.log(error);
-  });
-});
-
-$.get('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/ZEIiDb0Iy2wNzVD068jm/scores/', (response) => {
-  console.log(response.result);
-  const arr = response.result;
-
-  wrapscores(arr);
-}).catch((error) => {
-  console.log(error);
+  fetchScore();
 });
