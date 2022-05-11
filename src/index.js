@@ -11,11 +11,6 @@ const submitBtn = document.getElementById('Submit');
 const refreshBtn = document.getElementById('refresh');
 
 submitBtn.addEventListener('click', () => {
-  const score = {
-    user: inputName.value,
-    score: inputScore.value,
-  };
-
   fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/xPaIrcfY1XTX3ESgEwUR/scores/', {
     method: 'POST',
     headers: { 'content-type': 'application/json' },
