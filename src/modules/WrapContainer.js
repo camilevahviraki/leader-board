@@ -1,9 +1,11 @@
 const wrapContainer = () => {
   document.body.innerHTML = `
     <section class="container">
-    <h1 class="mainTitle">
+    <header>
+      <h1 class="mainTitle">
         Leaderboard
-    </h1>
+      </h1>
+    </header>
     <div class="wrapscores">
         <div class="scores">
           <div class="refreshB">
@@ -19,6 +21,9 @@ const wrapContainer = () => {
             <button id="Submit">Submit</button>
         </div>
     </div>
+    <footer>
+      <p>Copyright</p>
+    </footer>
 
 </section>
     `;
