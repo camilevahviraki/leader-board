@@ -21,8 +21,9 @@ submitBtn.addEventListener('click', () => {
     headers: { 'content-type': 'application/json' },
     body: JSON.stringify({ user: inputName.value, score: inputScore.value }),
   }).then((response) => {
-    console.log(response);
     if (response.ok) {
+      inputName.value = '';
+      inputScore.value = '';
       return response.json();
     }
     throw new Error('Request failed!');
