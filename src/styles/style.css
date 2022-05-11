@@ -87,7 +87,6 @@ input {
 #Submit {
   height: 40px;
   border-radius: 0;
-  background-color: transparent;
   position: absolute;
   right: 1%;
   font-weight: 700;
@@ -103,7 +102,6 @@ input {
 #Submit:hover {
   height: 40px;
   border-radius: 0;
-  background-color: transparent;
   position: absolute;
   right: 1%;
   font-weight: 700;
