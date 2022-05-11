@@ -1,23 +1,5 @@
-const scores = [
-  {
-    name: 'camile',
-    score: '85',
-  },
-  {
-    name: 'Axel',
-    score: '29',
-  },
-  {
-    name: 'xxl',
-    score: '45',
-  },
-  {
-    name: 'Alex',
-    score: '56',
-  },
-];
-
-const wrapscores = () => {
+const wrapscores = (scores) => {
+  document.getElementById('scoresAndName').innerHTML = '';
   scores.forEach((a, i) => {
     function setId() {
       if ((i % 2) === 0) {
@@ -26,7 +8,7 @@ const wrapscores = () => {
       return 'whiteP';
     }
     document.getElementById('scoresAndName').innerHTML += `
-            <p id="${setId()}">${a.name}: ${a.score}</p>
+            <p id="${setId()}">${a.user}: ${a.score}</p>
         `;
   });
 };
