@@ -4,6 +4,8 @@
 
 # leader-board
 
+![](./src/images/leader-board.png)
+
 > This is my personnal App demo, feel free to check it out.
 
 
@@ -27,6 +29,9 @@ To get a local copy up and running follow these simple example steps.
 - Open terminal in that folder and run `npm run start`.
 
 
+## Live link
+
+Open [the live demo](https://camilevahviraki.github.io/leader-board/) of this project.
 
 ## Authors
 
