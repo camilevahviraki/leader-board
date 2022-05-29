@@ -1,4 +1,4 @@
-// import './styles/style.css';
+import './styles/style.css';
 import { result } from 'lodash';
 import wrapContainer from './modules/WrapContainer.js';
 import wrapscores from './modules/wrapScores.js';

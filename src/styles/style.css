@@ -139,6 +139,8 @@ h2 {
   font-family: 'Lato', sans-serif;
   border-radius: 5px;
   border: 1px solid white;
+  height: 70%;
+  overflow: scroll;
 }
 
 #greyP {
@@ -172,4 +174,37 @@ footer {
 footer p {
   color: white;
   margin-left: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+  .wrapscores {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90%;
+    align-items: center;
+  }
+
+  footer {
+    position: relative;
+    margin-top: 50px;
+  }
+
+  .container {
+    width: 100%;
+    height: auto;
+  }
+
+  .form {
+    width: 90%;
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .scores {
+    width: 90%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 }
